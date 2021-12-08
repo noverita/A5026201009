@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CRUD Tabel Absen</title>
-</head>
-<body>
+@extends('layout.bahagia')
+@section('title', 'CRUD Tabel')
+   @section('judulhalaman', 'Daftar Absensi Pegawai')
 
-	<h2>Daftar Absensi Pegawai</h2>
-
+   @section('konten')
 
 	<a href="/absen/add"> + Tambah Absensi</a>
 
@@ -24,23 +20,25 @@
 		@foreach($absen as $a)
 		<tr>
 
-			<td>{{ $a->absen_idPegawai }}</td>
-			<td>{{ $a->absen_tanggal }}</td>
-			<td>{{ $a->absen_status }}</td>
+			<td>{{ $a->IDPegawai }}</td>
+			<td>{{ $a->Tanggal }}</td>
+			<td>{{ $a->Status }}</td>
 			<td>
-				<a href="/absen/edit/{{ $a->absen_id }}">Edit Absensi</a>
+				<a href="/absen/edit/{{ $a->ID }}">Edit Absensi</a>
 				|
-				<a href="/absen/hapus/{{ $a->absen_id }}">Delete Absensi</a>
+				<a href="/absen/hapus/{{ $a->ID }}">Delete Absensi</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
+    <br>
     <p>
         Keterangan Status: <br>
         I : Izin <br>
         S : Sakit <br>
         A : Alpha <br>
         </p>
+        @endsection
 
-</body>
-</html>
+
+
