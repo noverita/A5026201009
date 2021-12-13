@@ -8,11 +8,26 @@
 
 	<br/>
 	<br/>
-
+    <style>
+        th {
+            width: 15%;
+            text-align: center;
+            background-color: #216d80;
+            height: 1cm;
+            color: white;
+            font-size: 24px
+        }
+        .ket{
+            text-align: left
+        }
+        td{
+            font-size: 18px
+        }
+    </style>
 	<table border="1">
 		<tr>
 
-			<th>IDPegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
 			<th>Opsi</th>
@@ -20,7 +35,7 @@
 		@foreach($absen as $a)
 		<tr>
 
-			<td>{{ $a->IDPegawai }}</td>
+			<td>{{ $a->pegawai_nama }}</td>
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
@@ -32,12 +47,16 @@
 		@endforeach
 	</table>
     <br>
-    <p>
-        Keterangan Status: <br>
-        I : Izin <br>
-        S : Sakit <br>
-        A : Alpha <br>
-        </p>
+        <div class="ket">
+        <table>
+        <tr>
+            <td style="width: 5cm"><b> Keterangan Status:</b></td>
+            <td style="width: 3cm">I : Izin</td>
+            <td style="width: 3cm">S : Sakit</td>
+            <td style="width: 3cm">A : Alpha</td>
+        </tr>
+        </table>
+        </div>
         @endsection
 
 

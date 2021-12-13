@@ -24,14 +24,21 @@
         text-align: center;
         font-size: 32pt;
         font-family: 'Francois One', sans-serif;
-        text-shadow: 2px 2px rgb(21, 88, 133);
-        background-color: #a1a1a1;
+        text-shadow: 2px 2px rgb(6, 62, 99);
+        background-color: #216d80;
+        color: white
     }
     .footer{
         text-align: center;
         font-size: 10pt;
         font-family: 'Francois One', sans-serif;
     }
+    img {
+            border-radius: 100%;
+            border-style: solid;
+            border-color: rgb(100, 19, 46);
+            box-shadow: 8px 2px #000000;
+        }
     .sidenav {
   height: 100%;
   width: 195px;
@@ -49,7 +56,7 @@
   text-decoration: none;
   font-size: 20px;
   font-family: 'Francois One', sans-serif;
-  color: #818181;
+  color: white;
   display: block;
 }
 
@@ -69,13 +76,21 @@
 }
 h3 {
     text-align: center;
+    font-family: 'Francois One', sans-serif;
 }
 .content{
     text-align: center;
+    font-family: 'Francois One', sans-serif;
 }
 table{
-    margin-left: auto;
-  margin-right: auto;
+    margin-left: 2cm;
+  margin-right: 2cm;
+  font-family: 'Francois One', sans-serif;
+  text-align: center
+
+}
+p{
+    text-align: center
 }
 </style>
 </head>
@@ -84,18 +99,21 @@ table{
     <div class="container">
         <header>
         <div class="header">
-            <img src="/noverita.jpeg" alt="noverita" height="150cm" width="200cm">
+            <img src="/noverita.jpeg" alt="noverita" height="120cm" width="150cm">
             <h1>Noverita Rizki Pramesta</h1>
             <h2>5026201009</h2>
         <hr/>
     </div>
     </header>
-
     <div class="sidenav">
-        <a href="/pegawai">Pegawai</a>
-        <a href="/absen">Absen</a>
+        <a href="/">Home</a><hr>
+        <a href="/pegawai">Pegawai</a><hr>
+        <a href="/absen">Absen</a><hr>
+        <a href="/sepedamotor">Praktikum 3</a>
       </div>
-    <h3><b> @yield('judulhalaman')</b></h3>
+
+
+        <h3><b> @yield('judulhalaman')</b></h3>
 
     <div class="content">
           <table>
@@ -108,7 +126,7 @@ table{
 <footer>
     <div class="footer">
         <hr>
-        <p><b> Hak Cipta Oleh 5026201009 - Noverita Rizki Pramesta </b></p>
+        <b> Hak Cipta Oleh 5026201009 - Noverita Rizki Pramesta </b>
     </div>
 </footer>
 
