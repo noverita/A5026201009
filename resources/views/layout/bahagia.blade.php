@@ -109,7 +109,7 @@ p{
         <a href="/">Home</a><hr>
         <a href="/pegawai">Pegawai</a><hr>
         <a href="/absen">Absen</a><hr>
-        <a href="/sepedamotor">Praktikum 3</a>
+        <a href="/sepedamotor">Sepeda Motor</a>
       </div>
 
 
