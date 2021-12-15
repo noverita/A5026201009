@@ -57,3 +57,8 @@ Route::get('/sepedamotor/hapus/{id}','sepedaMotorController@hapus');
 Route::get('/sepedamotor/cari','sepedaMotorController@cari');
 Route::get('/sepedamotor/view/{id}','sepedaMotorController@detail');
 
+//route CRUD nilaikuliah
+Route::get('/nilaikuliah','nilaiKuliahController@index');
+Route::get('/nilaikuliah/tambah','nilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','nilaiKuliahController@store');
+
