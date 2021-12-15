@@ -25,6 +25,16 @@
 			<td>{{ $nk->NRP }}</td>
 			<td>{{ $nk->NilaiAngka }}</td>
 			<td>{{ $nk->SKS }}</td>
+            <td>@if($nk->NilaiAngka <=40)
+                 D @endif
+            @if ($nk->NilaiAngka >=41 && $nk->NilaiAngka <=60)
+                 C @endif
+            @if ($nk->NilaiAngka >=61 && $nk->NilaiAngka <=80)
+                B @endif
+            @if($nk->NilaiAngka >=81)
+                 A
+            @endif</td>
+            <td>{{$nk ->NilaiAngka* $nk->SKS}}</td>
 		</tr>
 		@endforeach
 	</table>
