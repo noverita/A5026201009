@@ -16,10 +16,6 @@
 		NRP <input type="text" name="nrp" required="required"> <br/>
 		Nilai Angka <input type="text" name="nilaiangka" required="required"> <br/>
 		SKS <input type="text" name="sks" required="required"> <br/>
-
-         Nilai Huruf <input type="text" name="nilaihuruf" required="required"> <br/>
-
-            bobot <input type="text" name="bobot" required="required">
                 <input type="submit" value="Simpan Data">
 	</form>
 
